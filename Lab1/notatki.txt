@@ -1,0 +1,1 @@
+Metoda Cramera - Rozwiązać za pomocą metody Cramera układy równań liniowych
