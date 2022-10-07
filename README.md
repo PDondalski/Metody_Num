@@ -15,6 +15,6 @@ NAJLEPSZE KSIĄŻKI:
 =========================================================================================
   Środowisko programistyczne: *Scilab*
   
-  
-  
+  * Konsultacje
+  Poniedziałe 9:45 - 11:15, A3/4  
   
