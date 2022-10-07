@@ -4,9 +4,10 @@
 3. A. Kiełbasiński, H.Schwetlick, Numeryczna algebra liniowa: wprowadzenie do obliczeń zautomatyzowanych, Wyd. Wydawnictwa Naukowo-Techniczne, R.1994
 =========================================================================================
 NAJLEPSZE KSIĄŻKI:
-> A. Quarteribum R, Saccim F. Saleri, "Numerical Mathematics" \n
+> A. Quarteribum R, Saccim F. Saleri, "Numerical Mathematics"
+> 
 > Z. Fortuna, B. Macukow, J. Wąsowski, Metody Numeryczne, Wyd. Wydawnictwa Naukowo-Techniczne, R. 2005
-
+=========================================================================================
 * Pierwsze kolokwium
   18.11.2022
 * Drugie kolokwium
