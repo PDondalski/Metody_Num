@@ -12,6 +12,9 @@ NAJLEPSZE KSIĄŻKI:
   18.11.2022
 * Drugie kolokwium
   05.01.2023
+=========================================================================================
+  Środowisko programistyczne: *Scilab*
+  
   
   
   
