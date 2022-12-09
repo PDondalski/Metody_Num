@@ -1,0 +1,59 @@
+clear;
+clc;
+clf;
+// 0 - normalna praca
+// 1 - maksymalna ilość iteracji (przekroczyłem/osiągnąłem)
+// 2 - osiągnięto dokładność
+// 3 - brak osiągniętych założeń metody połowienia
+
+//1 - wprowadzić dane
+//2 - zadeklarować funkcję f
+//3 - na podstawie funkcji f zadeklarować f' i f'' które będa odpowiadały za liczenie pochodnych
+//Przyjąć Wi=0, ale można ustawić od razu Wi na 1 (Wi to nr przybliżenia którego właśnie będzielmy liczyć)
+//Xwi = a - żeby porównywać ze sobą dwa ostatnie przybliżenia to trzeba ich mieć minimum 2, więc jak jesteśmy na starcie i nie mamy żadnego i policzymy pierwsze to nie porównamy bo nie ma z czym, to wprowadzamy sztuczne przybliżenie żeby mając pierwsze można było z czymś porównać. Skoro wiemy, że pierwiastek jest gdzieś wewnątrz przedziału od a do b to w bardzo kiepskim przybliżeniu możemy założyć,że jest w przybliżeniu równy a lub b. Tylko to przybliżenie będzie słabe. Można wybrać którykolwiek, odległośc do obydwu jest taka sama, a my wybraliśmy a w tym przypadku.
+//Jeśli warunek metody połowienia nie jest spełniony to kończymy, bo jeśli to nie jest spełnione to nie jest spełnione regula falsi, bo to są te same założenia plus coś jeszcze. Więc jak jedno nie ma spełnionych tych reguł to druga też nie.
+// Sprawdzamy czy jedna pochodna ma szansę potencjalnie być dobrze i czy druga.
+
+
+//Dane testowe
+a=-2;
+b=0.5;
+r=4;
+nmax=50;
+h=0.001;
+function y=f(x);
+    y=(x^2-3)*sin(x);
+endfunction;
+
+function y=fp(x,h);
+    y=(f(x+h)-f(x))/h;
+endfunction;
+function y=fpp(x,h);
+    y=(fp(x+h,h)-fp(x,h))/h;
+endfunction;
+
+//sztuczne rozwiązanie początkowe
+wi=1;
+xr(wi)=a;
+kw=0; // kod wyjścia 0 (normalna praca)
+
+if f(a)*f(b)<0 then
+    //założenia metody połowienia są spełnione
+    if ~(fp(a,h)*fp(b,h)>0 && fpp(a,h)*fpp(b,h)>0) then
+    //metoda połowienia
+end;
+// WARUNKOWA REALIZACJA REGUŁY METODA FALSI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
